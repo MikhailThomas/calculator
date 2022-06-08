@@ -1,44 +1,51 @@
-.container {
-  max-width: 400px;
-  margin: 10vh auto 0 auto;
-  box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+body{
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Simple-wallpaper-HD-backgrounds.jpg);
 }
-
-#display {
+#output {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.568);
+  height: 100px;
   text-align: right;
-  height: 70px;
-  line-height: 70px;
-  padding: 16px 8px;
-  font-size: 25px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 3%;
+  margin: 6px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
 }
-
-.buttons {
-  display: grid;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid#999;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.calculator {
+  border: 6px solid rgb(244, 244, 48);
+  background-color: rgba(21, 174, 185, 0.404);
+  border-radius: 3%;
+  max-width: 450px;
+  margin-inline: auto;
+  box-shadow: #8F2D6B;
 }
-
-.buttons > div {
-  border-top: 1px solid #999;
-  border-right: 1px solid#999;
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.button {
-  border: 0.5px solid #999;
-  line-height: 100px;
+.item {
+  aspect-ratio: 1;
+  width: 100px;
+  height: 100px;
+  background-color: #463C3C;
+  border-radius: 20%;
+  border: 4px solid rgb(244, 244, 48);
+  color: white;
+  margin: 4px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  font-size: 25px;
-  cursor: pointer;
 }
-
-#equal {
-  background-color: rgb(85, 85, 255);
-  color: white;
+.item:hover {
+  background-color: #8F2D2D;
 }
-
-.button:hover {
-  background-color: #323330;
-  color: white;
-  transition: 0.5s ease-in-out;
+#zero {
+  width: 43%;
+  border-radius: 50px;
 }
